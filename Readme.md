@@ -13,6 +13,7 @@ convection-diffusion-solver ├── README.md # Project overview, usage, and i
 
 
 
+
 # Derivation of the Finite Volume Method Equation from the Convection-Diffusion PDE
 
 This file explains the step-by-step process of obtaining the Finite Volume Method (FVM) equation for a convection-diffusion problem starting from the partial differential equation (PDE) form.
@@ -118,5 +119,29 @@ $$
 \Delta x \frac{\partial u_i}{\partial t} + (c u)_{i+1/2} - (c u)_{i-1/2} - D \frac{u_{i+1} - 2 u_i + u_{i-1}}{\Delta x} = 0
 $$
 
-Dividing by \( \Delta x \), the final **Finite Volume Method
+Dividing by \( \Delta x \), the final **Finite Volume Method discretized equation** is:
+
+$$
+\frac{\partial u_i}{\partial t} + \frac{(c u)_{i+1/2} - (c u)_{i-1/2}}{\Delta x} - \frac{D}{\Delta x^2} (u_{i+1} - 2 u_i + u_{i-1}) = 0
+$$
+
+This equation represents the discrete form of the convection-diffusion PDE using the Finite Volume Method.
+
+---
+
+## Getting Started
+
+### Prerequisites
+- C++17 or newer
+- CMake 3.10 or newer
+
+### Installation
+```bash
+git clone https://github.com/yourusername/convection-diffusion-solver.git
+cd convection-diffusion-solver
+mkdir build
+cd build
+cmake ..
+make
+
 
