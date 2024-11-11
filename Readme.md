@@ -62,7 +62,12 @@ Using the **divergence theorem** (or fundamental theorem of calculus in 1D) to c
    \int_{x_{i-1/2}}^{x_{i+1/2}} \frac{\partial}{\partial x} (c u) \, dx = (c u)_{i+1/2} - (c u)_{i-1/2}
    $$
 
-2. For the **diffusion term**:
+   
+$$
+\int_{x_{i-1/2}}^{x_{i+1/2}} \frac{\partial}{\partial x} (c u) \, dx = (c u)_{i+1/2} - (c u)_{i-1/2}
+$$
+
+3. For the **diffusion term**:
 
    $$
    \int_{x_{i-1/2}}^{x_{i+1/2}} \frac{\partial}{\partial x} \left( D \frac{\partial u}{\partial x} \right) \, dx = \left( D \frac{\partial u}{\partial x} \right)_{i+1/2} - \left( D \frac{\partial u}{\partial x} \right)_{i-1/2}
