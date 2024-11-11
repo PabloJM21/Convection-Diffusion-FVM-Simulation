@@ -35,7 +35,7 @@ This equation describes the combined effects of convection (movement of \( u \) 
 
 ## Step 2: Divide the Domain into Control Volumes
 
-To apply the **Finite Volume Method**, divide the spatial domain into discrete, non-overlapping control volumes, each centered at points $\( x_i \)$. Let the control volume around \( x_i \) span from \( x_{i-1/2} \) to \( x_{i+1/2} \), with \( x_{i-1/2} \) and \( x_{i+1/2} \) representing the left and right faces of the control volume.
+To apply the **Finite Volume Method**, divide the spatial domain into discrete, non-overlapping control volumes, each centered at points $\( x_i \)$. Let the control volume around $\( x_i \)$ span from \( x_{i-1/2} \) to \( x_{i+1/2} \), with \( x_{i-1/2} \) and \( x_{i+1/2} \) representing the left and right faces of the control volume.
 
 ## Step 3: Integrate the PDE over a Control Volume
 
