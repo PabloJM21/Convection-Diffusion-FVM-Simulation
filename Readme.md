@@ -59,13 +59,11 @@ Using the **divergence theorem** (or fundamental theorem of calculus in 1D) to c
 1. For the **convection term**:
 
    $$
-   \int_{x_{i-1/2}}^{x_{i+1/2}} \frac{\partial}{\partial x} (c u) \, dx = (c u)_{i+1/2} - (c u)_{i-1/2}
+   \int_{x_{i-1/2}}^{x_{i+1/2}} \frac{\partial}{\partial x} (c u) \, dx = (c u)_{i-1/2} - (c u)_{i-1/2}
    $$
 
    
-$$
-\int_{x_{i-1/2}}^{x_{i+1/2}} \frac{\partial}{\partial x} (c u) \, dx = (c u)_{i+1/2} - (c u)_{i-1/2}
-$$
+
 
 3. For the **diffusion term**:
 
